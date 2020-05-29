@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS Level;
+
+CREATE TABLE Level(
+  levelId INTEGER NOT NULL UNIQUE PRIMARY KEY,
+  levelName TEXT
+  
+);
