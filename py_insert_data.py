@@ -24,7 +24,10 @@ def make_sql_lines(table_name, data, headers):
                 else:
                     val = f"'{entry[value]}'"
                     print(val, 'loop')
-                f.write(f'{val},')
+                if value == len(entry)-1:
+                    f.write(f'{val}')
+                else:
+                    f.write(f'{val},')
             f.write(f');\n')
 
 
